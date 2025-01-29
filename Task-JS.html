@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+</head>
+
+<body>
+
+    <script>
+
+        // tasks
+
+
+        function sum(n1, n2) {
+            let res = n1 + n2;
+            return res;
+        }
+
+
+        function diff(n1, n2) {
+            let res = n1 - n2;
+            return res;
+        }
+
+
+        function product(n1, n2) {
+            let res = n1 * n2;
+            return res;
+        }
+
+
+        function division(n1, n2) {
+            let res = n1 / n2;
+            return res;
+        }
+
+
+
+        function operator(n1, n2, operator) {
+
+            let result;
+            switch (operator) {
+                case '+':
+                    result = sum(n1, n2);
+                    break;
+                case '-':
+                    result = diff(n1, n2);
+                    break;
+                case '*':
+                    result = product(n1, n2);
+                    break;
+                case '/':
+                    result = division(n1,n2);
+                    break;
+
+                default:
+                    result = 'invald operation';
+                    break;
+            }
+
+            return result;
+
+        }
+
+        console.log(operator(8, 2, '*'));
+
+
+
+
+
+    </script>
+</body>
+
+</html>

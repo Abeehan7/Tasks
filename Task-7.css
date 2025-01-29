@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+}
+
+body {}
+
+.content {
+    margin: 0 auto;
+
+    width: fit-content;
+
+    margin: 40px auto;
+}
+
+.head {
+    display: flex;
+    margin-bottom: 50px;
+
+    align-items: center;
+    gap: 10px;
+}
+
+.head h3 {
+    color: blue;
+}
+
+.sec1 {
+    display: flex;
+    gap: 60px;
+}
+
+.sec2 {
+    display: flex;
+    gap: 60px;
+}
+
+.sec4 {
+    display: flex;
+    gap: 60px;
+}
+
+.sec5 {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+
+input {
+    width: 250px;
+    height: 40px;
+}
+
+.address {
+    width: 99%;
+    height: 100px;
+}
+
+button {
+    background-color: blue;
+    color: aliceblue;
+
+    padding: 10px 50px;
+}
+
+
+.apply {
+
+
+    display: flex;
+    justify-content: end
+}

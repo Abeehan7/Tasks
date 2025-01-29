@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 30px 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    font-size: small;
+}
+
+.logo {
+    color: rgb(98, 196, 1);
+}
+
+.all {
+    background: linear-gradient(#00ff0068, #ffffff);
+    padding-top: 30px;
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.text {
+    margin-bottom: 30px;
+}
+
+.content {
+    margin: 60px;
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    color: #ffffff;
+    background-color: rgb(98, 196, 1);
+    border: none;
+    padding: 10px 50px;
+    border-radius: 6px;
+}

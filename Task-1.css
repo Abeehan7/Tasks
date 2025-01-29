@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+h1 {
+    background-color: purple;
+    color: white;
+    margin: 10px 200px;
+    padding: 25px;
+    text-align: center;
+}
+.sec1,.sec2,.sec3{
+background-color: aqua;
+padding: 20px 10px 100px;
+}
+
+.sec1{
+    flex: 1;
+}
+.sec2{
+    flex: 1;
+}
+.sec3{
+    flex: 2;
+}
+
+.all{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    margin: 10px 200px;
+}
+.first,.second{
+    margin-bottom: 15px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.lastbutton{
+    background-color: aliceblue;
+    text-align: center;
+    margin: 10px 0px 20px;
+padding: 5px 15px;
+}
+.button1,.button2,.button3,.button4 {
+    background-color: aliceblue;
+    padding: 5px 15px;
+    font-size: small;
+}
+.content1 p{
+    font-size: small;
+}
