@@ -21,12 +21,13 @@
 
                 <input type="text" placeholder="First Name" style="width: 162px">
 
-                <input type="text" placeholder="Last Name" style="width: 162px;" >
+                <input type="text" placeholder="Last Name" style="width: 162px;">
 
             </div>
             <div class="sec">
 
-                <input class="email" type="email" placeholder="E-mail">
+                <input class="email" id="email" type="email" placeholder="E-mail" onkeyup="getValue()">
+                <p id="err">Enter valid e-mail !</p>
 
                 <input type="password" placeholder="Password">
 
@@ -59,6 +60,8 @@
             <p>Copyright © Yourcompany.com</p>
         </div>
     </form>
+
+    <script src="Task-3.js"></script>
 
 </body>
 

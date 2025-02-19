@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS OOP</title>
+</head>
+
+<body>
+
+
+    <Script>
+        // task-1
+        class Person {
+            name;
+            age;
+            constructor(n, a) {
+                this.name = n;
+                this.age = a;
+            }
+            introduce = function () {
+                console.log(
+                    `Hello, my name is ${this.name} and I am ${this.age} years old.`
+                );
+            }
+        }
+        let per1 = new Person('Alice', 30)
+
+        per1.introduce()
+
+
+        // task-2
+        class Rectangle {
+            width;
+            height;
+            constructor(w, h) {
+                this.width = w;
+                this.height = h;
+            }
+            area = function () {
+                console.log(this.width * this.height);
+            }
+            perimeter = function () {
+                console.log(2 * (this.width + this.height));
+            }
+        }
+        let rect = new Rectangle(10, 5)
+
+        rect.area()
+        rect.perimeter()
+
+
+        // task-3
+        class BankAccount {
+            accountHolder;
+            balance;
+            constructor(aH, b) {
+                this.accountHolder = aH;
+                this.balance = b
+            }
+            deposit = function (amount) {
+                this.balance = this.balance + amount;
+            }
+            withdraw = function (amount) {
+                this.balance = this.balance - amount;
+            }
+            getBalance = function () {
+                return this.balance
+            }
+        }
+        let account1 = new BankAccount('John Doe', 1000);
+
+        account1.deposit(100);
+        console.log(account1.getBalance());
+        account1.withdraw(500)
+        console.log(account1.getBalance());
+
+
+
+        // task-4
+        class Car {
+            make;
+            model;
+            year;
+            mileage;
+            constructor(make, model, year, mile) {
+                this.make = make;
+                this.model = model;
+                this.year = year;
+                this.model = mile;
+            }
+            drive = function (distance) {
+
+
+            }
+        }
+        let car1 = new Car('Toyota', 'Camry', 2020, 15000);
+
+
+
+        // task-5
+        class Library {
+            name;
+            books = [];
+
+            constructor(n) {
+                this.name = n;
+
+            }
+            addBook = function (title, author) {
+
+                let obj = {
+                    title,
+                    author
+                }
+                this.books = [...this.books, obj]
+            }
+
+            removeBook = function (title) {
+                let arr = []
+
+                let flag = false
+                for (let i = 0; i < this.books.length; i++) {
+
+                    if (this.books[i].title === title) {
+                        flag = true
+                    } else {
+                        arr.push(this.books[i])
+                    }
+                }
+                if (flag === false) {
+                    console.log('book not found');
+                } else {
+                    console.log('book deleted successfully');
+
+                }
+                this.books = arr;
+            }
+            listBook = function (title) {
+                for (let i = 0; i < this.books.length; i++) {
+
+                    console.log(this.books[i].title);
+
+
+                }
+            }
+        }
+        let lib1 = new Library("City Library")
+
+
+        lib1.addBook('The Great Gatsby', 'Scott')
+        lib1.addBook("To Kill a Mockingbird", "Harper")
+        lib1.listBook()
+        console.log('===============');
+
+        lib1.removeBook('The Great Gatsby')
+        lib1.listBook()
+
+
+
+
+        let arr = [5, 7, 4, 6, 9, 10, 5, 3];
+        console.log(arr);
+
+        console.log(arr.toSpliced(2, 0, 100, 70));
+        console.log(arr.splice(2, 2, 2000, 600));
+        console.log(arr);
+
+
+    </Script>
+</body>
+
+</html>

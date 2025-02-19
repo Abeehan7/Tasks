@@ -37,6 +37,10 @@ input {
     color: black;
 }
 
+.email {
+    margin-bottom: 0;
+}
+
 .name {
     display: flex;
     justify-content: center;
@@ -67,6 +71,13 @@ a {
 
 .sec input {
     width: 90%;
+}
+
+#err {
+    font-size: small;
+    color: red;
+    /* text-align: right;
+    padding-right: 10px; */
 }
 
 @media (min-width: 600px) {}
