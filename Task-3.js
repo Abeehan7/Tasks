@@ -9,4 +9,28 @@ function getValue() {
     } else {
         err.style.visibility = 'visible'
     }
-}
+};
+
+let password = document.getElementById('password')
+let err2 = document.getElementById('err2')
+
+let passwordRegX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/
+
+function getValue2() {
+    if (passwordRegX.test(password.value)) {
+        err2.style.visibility = 'hidden'
+    } else {
+        err2.style.visibility = 'visible'
+    }
+};
+
+let confirmPassword = document.getElementById('confirmPassword');
+let err3 = document.getElementById('err3');
+
+function getValue3() {
+    if (password === confirmPassword) {
+        err3.style.visibility = 'hidden'
+    } else {
+        err3.style.visibility = 'visible'
+    }
+};

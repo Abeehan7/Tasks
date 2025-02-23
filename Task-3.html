@@ -29,9 +29,12 @@
                 <input class="email" id="email" type="email" placeholder="E-mail" onkeyup="getValue()">
                 <p id="err">Enter valid e-mail !</p>
 
-                <input type="password" placeholder="Password">
+                <input id="password" type="password" placeholder="Password" onkeyup="getValue2()">
+                <p id="err2">Password must have at least 8 characters that include at least 1 lowercase character, 1
+                    uppercase character, 1 number and 1 special character in (!@#$%^&*)</p>
 
-                <input type="password" placeholder="confirm Password">
+                <input id="confirmPassword" type="password" placeholder="Confirm Password" onkeyup ="getValue3()">
+                <p id="err3">Please enter the password again</p>
 
             </div>
         </div>
