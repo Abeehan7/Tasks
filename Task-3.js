@@ -5,9 +5,11 @@ let emailRegX = /^[a-zA-Z0-9._%+-]+@gmail\.com$/
 
 function getValue() {
     if (emailRegX.test(email.value)) {
-        err.style.visibility = 'hidden'
+        err.style.display = 'none'
+        email.style.outlineColor = '#00c8ff'
     } else {
-        err.style.visibility = 'visible'
+        email.style.outlineColor = 'red'
+        err.style.display = 'block'
     }
 };
 
@@ -18,9 +20,11 @@ let passwordRegX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$
 
 function getValue2() {
     if (passwordRegX.test(password.value)) {
-        err2.style.visibility = 'hidden'
+        err2.style.display = 'none'
+        password.style.outlineColor = '#00c8ff'
     } else {
-        err2.style.visibility = 'visible'
+        err2.style.display = 'block'
+        password.style.outlineColor = 'red'
     }
 };
 
@@ -28,9 +32,11 @@ let confirmPassword = document.getElementById('confirmPassword');
 let err3 = document.getElementById('err3');
 
 function getValue3() {
-    if (password === confirmPassword) {
+    if (password.value == confirmPassword.value) {
         err3.style.visibility = 'hidden'
+        confirmPassword.style.outlineColor = '#00c8ff'
     } else {
         err3.style.visibility = 'visible'
+        confirmPassword.style.outlineColor = 'red'
     }
 };

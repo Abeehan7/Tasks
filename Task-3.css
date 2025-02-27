@@ -75,26 +75,31 @@ a {
 
 #err {
     font-size: small;
-    color: red;
-    visibility: hidden;
-    margin-bottom: 10px;
-}
-#err2 {
-    font-size: small;
-    color: red;
-    visibility: hidden;
-    margin-bottom: 10px;
-}
-#err3 {
-    font-size: small;
-    color: red;
-    visibility: hidden;
+    color: rgb(247, 66, 66);
+    /* visibility: hidden; */
+    display: none;
     margin-bottom: 10px;
 }
 
-input:focus{
+#err2 {
+    font-size: small;
+    color: rgb(247, 66, 66);
+    /* visibility: hidden */
+    display: none;
+    margin-bottom: 10px;
+}
+
+#err3 {
+    font-size: small;
+    color: rgb(247, 66, 66);
+    visibility: hidden;
+
+    margin-bottom: 10px;
+}
+
+input:focus {
     outline: solid;
-    outline-color: rgb(0, 200, 255);
+    outline-color: #00c8ff;
 }
 
 @media (min-width: 600px) {}

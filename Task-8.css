@@ -1,0 +1,22 @@
+
+body{
+    text-align:center;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.height, .weight{
+height: 30px;
+
+}
+
+.check{
+    margin: 50px;
+}
+
+.check>input{
+    background-color: chartreuse;
+    padding: 5px 20px;
+}
